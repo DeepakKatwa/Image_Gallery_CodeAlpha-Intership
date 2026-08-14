@@ -1,0 +1,1501 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="description"
+        content="Image Gallery - A modern responsive image gallery showcasing nature, travel, architecture and people."
+    >
+
+    <meta
+        name="keywords"
+        content="image gallery, photography, portfolio, responsive gallery"
+    >
+
+    <meta
+        name="author"
+        content="Image Gallery"
+    >
+
+    <title>Image Gallery</title>
+
+    <!-- Google Font -->
+    <link
+        rel="preconnect"
+        href="https://fonts.googleapis.com"
+    >
+
+    <link
+        rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin
+    >
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet"
+    >
+
+    <!-- CSS -->
+    <link
+        rel="stylesheet"
+        href="css/style.css"
+    >
+
+</head>
+
+
+<body>
+    <header class="navbar">
+
+        <div class="container nav-container">
+
+            <!-- Logo -->
+
+            <a
+                href="#home"
+                class="logo"
+            >
+                Image<span>Gallery</span>
+            </a>
+
+
+            <!-- Desktop Navigation -->
+
+            <nav
+                class="nav-links"
+                id="navLinks"
+            >
+
+                <a
+                    href="#home"
+                    class="nav-link active-link"
+                >
+                    Home
+                </a>
+
+                <a
+                    href="#gallery"
+                    class="nav-link"
+                >
+                    Gallery
+                </a>
+
+                <a
+                    href="#about"
+                    class="nav-link"
+                >
+                    About
+                </a>
+
+            </nav>
+
+
+            <!-- Mobile Menu Button -->
+
+            <button
+                class="menu-btn"
+                id="menuButton"
+                aria-label="Open navigation menu"
+                aria-expanded="false"
+            >
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+        </div>
+
+    </header>
+    <main>
+
+        <section
+            class="hero"
+            id="home"
+        >
+
+            <div class="hero-overlay"></div>
+
+            <div class="hero-content container">
+
+                <p class="hero-subtitle">
+                    VISUAL STORIES
+                </p>
+
+                <h1>
+                    Explore the world
+                    <span>through our lens.</span>
+                </h1>
+
+                <p class="hero-description">
+                    Discover a carefully curated collection
+                    of nature, travel, architecture and
+                    unforgettable moments.
+                </p>
+
+                <a
+                    href="#gallery"
+                    class="hero-btn"
+                >
+                    Explore Gallery
+                    <span>→</span>
+                </a>
+
+            </div>
+
+            <div class="scroll-indicator">
+                <span></span>
+                Scroll to explore
+            </div>
+
+        </section>
+
+        <section
+            class="gallery-section"
+            id="gallery"
+        >
+
+            <div class="container">
+
+
+                <!-- Section Heading -->
+
+                <div class="section-heading">
+
+                    <p class="section-label">
+                        Memories
+                    </p>
+
+                    <h2>
+                        Moments worth remembering.
+                    </h2>
+
+                    <!-- <p>
+                        Explore our collection of carefully
+                        selected visual stories from around
+                        the world.
+                    </p> -->
+
+                </div>
+
+
+
+                <!-- Gallery Controls -->
+
+                <div class="gallery-controls">
+
+                    <!-- Filters -->
+
+                    <div
+                        class="filter-container"
+                        role="group"
+                        aria-label="Gallery categories"
+                    >
+
+                        <button
+                            class="filter-btn active"
+                            data-filter="all"
+                            type="button"
+                        >
+                            All
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="nature"
+                            type="button"
+                        >
+                            Nature
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="travel"
+                            type="button"
+                        >
+                            Travel
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="architecture"
+                            type="button"
+                        >
+                            Architecture
+                        </button>
+
+                        <button
+                            class="filter-btn"
+                            data-filter="people"
+                            type="button"
+                        >
+                            People
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+
+                <!-- Result Count -->
+
+                <div class="gallery-status">
+
+                    <span id="resultCount">
+                        Showing 16 images
+                    </span>
+
+                </div>
+
+
+                <div
+                    class="gallery-grid"
+                    id="galleryGrid"
+                >
+
+
+                    <!-- NATURE 1 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="nature"
+                        data-title="Mountain Escape"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/nature/nature1.jpg"
+                                alt="Mountain landscape"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Nature
+                                    </span>
+
+                                    <h3>
+                                        Mountain Escape
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Mountain Escape"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- NATURE 2 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="nature"
+                        data-title="Into The Forest"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/nature/nature2.jpg"
+                                alt="Green forest"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Nature
+                                    </span>
+
+                                    <h3>
+                                        Into The Forest
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Into The Forest"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+                    <!-- NATURE 3 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="nature"
+                        data-title="Ocean Horizon"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/nature/nature3.jpg"
+                                alt="Ocean horizon"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Nature
+                                    </span>
+
+                                    <h3>
+                                        Ocean Horizon
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Ocean Horizon"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- NATURE 4 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="nature"
+                        data-title="Golden Sunset"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/nature/nature4.jpg"
+                                alt="Golden sunset"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Nature
+                                    </span>
+
+                                    <h3>
+                                        Trees
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Golden Sunset"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- NATURE 5 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="nature"
+                        data-title="Slide"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/nature/nature5.jpg"
+                                alt="Green forest"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Nature
+                                    </span>
+
+                                    <h3>
+                                        Slide
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Into The Forest"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- NATURE 6 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="nature"
+                        data-title="Flowers"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/nature/nature6.jpg"
+                                alt="Green forest"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Nature
+                                    </span>
+
+                                    <h3>
+                                        Flowers
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Into The Forest"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>          
+
+                     <!-- NATURE 7 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="nature"
+                        data-title="Sunset"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/nature/nature7.jpg"
+                                alt="Green forest"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Nature
+                                    </span>
+
+                                    <h3>
+                                        Sunset
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Into The Forest"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- TRAVEL 1 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="travel"
+                        data-title="Wanderlust"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/travel/travel1.jpg"
+                                alt="Beautiful travel destination"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Travel
+                                    </span>
+
+                                    <h3>
+                                        Wanderlust
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Wanderlust"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- TRAVEL 2 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="travel"
+                        data-title="Hidden Destination"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/travel/travel2.jpg"
+                                alt="Hidden travel destination"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Travel
+                                    </span>
+
+                                    <h3>
+                                        Hidden Destination
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Hidden Destination"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- TRAVEL 3 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="travel"
+                        data-title="Road To Somewhere"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/travel/travel3.jpg"
+                                alt="Road through landscape"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Travel
+                                    </span>
+
+                                    <h3>
+                                        Road To Somewhere
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Road To Somewhere"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- TRAVEL 4 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="travel"
+                        data-title="City Lights"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/travel/travel4.jpg"
+                                alt="City lights at night"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Travel
+                                    </span>
+
+                                    <h3>
+                                        Captures
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View City Lights"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- TRAVEL 5 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="travel"
+                        data-title="Wanderlust"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/travel/travel5.jpg"
+                                alt="Beautiful travel destination"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Travel
+                                    </span>
+
+                                    <h3>
+                                        Wanderlust
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Wanderlust"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- TRAVEL 6 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="travel"
+                        data-title="Explore"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/travel/travel6.jpg"
+                                alt="Beautiful travel destination"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Travel
+                                    </span>
+
+                                    <h3>
+                                        Explore
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Wanderlust"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- TRAVEL 7 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="travel"
+                        data-title="Falls"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/travel/travel7.jpg"
+                                alt="Beautiful travel destination"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Travel
+                                    </span>
+
+                                    <h3>
+                                        Falls
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Wanderlust"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                    <!-- ARCHITECTURE 1 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="architecture"
+                        data-title="Modern Lines"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/architecture/architecture1.jpg"
+                                alt="Modern architecture"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Architecture
+                                    </span>
+
+                                    <h3>
+                                        Modern Lines
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Modern Lines"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ARCHITECTURE 2 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="architecture"
+                        data-title="Urban Geometry"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/architecture/architecture2.jpg"
+                                alt="Urban architectural structure"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Architecture
+                                    </span>
+
+                                    <h3>
+                                        Urban Geometry
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Urban Geometry"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ARCHITECTURE 3 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="architecture"
+                        data-title="Future Spaces"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/architecture/architecture3.jpg"
+                                alt="Contemporary building"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Architecture
+                                    </span>
+
+                                    <h3>
+                                        Future Spaces
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Future Spaces"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- ARCHITECTURE 4 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="architecture"
+                        data-title="Classic Design"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/architecture/architecture4.jpg"
+                                alt="Classic architecture"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        Architecture
+                                    </span>
+
+                                    <h3>
+                                        Classic Design
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Classic Design"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PEOPLE 1 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="people"
+                        data-title="Human Stories"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/people/people1.jpg"
+                                alt="Portrait photography"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        People
+                                    </span>
+
+                                    <h3>
+                                        Human Stories
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Human Stories"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PEOPLE 2 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="people"
+                        data-title="A Quiet Moment"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/people/people2.jpg"
+                                alt="Person enjoying a quiet moment"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        People
+                                    </span>
+
+                                    <h3>
+                                        A Quiet Moment
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View A Quiet Moment"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PEOPLE 3 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="people"
+                        data-title="Everyday Life"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/people/people3.jpg"
+                                alt="Everyday life photography"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        People
+                                    </span>
+
+                                    <h3>
+                                        Everyday Life
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Everyday Life"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+
+
+                    <!-- PEOPLE 4 -->
+
+                    <article
+                        class="gallery-item"
+                        data-category="people"
+                        data-title="Portraits"
+                    >
+
+                        <div class="image-wrapper">
+
+                            <img
+                                src="images/people/people4.jpg"
+                                alt="Creative portrait"
+                                loading="lazy"
+                            >
+
+                            <div class="image-loader"></div>
+
+                            <div class="image-overlay">
+
+                                <div class="image-info">
+
+                                    <span>
+                                        People
+                                    </span>
+
+                                    <h3>
+                                        Portraits
+                                    </h3>
+
+                                </div>
+
+                                <button
+                                    class="view-btn"
+                                    type="button"
+                                    aria-label="View Portraits"
+                                >
+                                    +
+                                </button>
+
+                            </div>
+
+                        </div>
+
+                    </article>
+
+                </div>
+
+
+
+                <!-- No Results -->
+
+                <div
+                    class="no-results"
+                    id="noResults"
+                >
+
+                    <div class="no-results-icon">
+                        ◌
+                    </div>
+
+                    <h3>
+                        No images found
+                    </h3>
+
+                    <p>
+                        Try another search term or category.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <section
+            class="about-section"
+            id="about"
+        >
+
+            <div class="container about-container">
+
+                <div class="about-content">
+
+                    <p class="section-label">
+                        ABOUT IMAGE GALLERY
+                    </p>
+
+                    <h2>
+                        Every image tells a story.
+                    </h2>
+
+                    <p>
+                        Image Gallery is a digital gallery designed
+                        to celebrate photography, creativity
+                        and visual storytelling.
+                    </p>
+
+                    <p>
+                        From peaceful landscapes and beautiful
+                        destinations to modern architecture and
+                        human moments, every image represents
+                        a unique story.
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+    </main>
+
+
+    <footer class="footer">
+
+        <div class="container footer-container">
+
+            <div>
+
+                <a
+                    href="#home"
+                    class="footer-logo"
+                >
+                    Image<span>Gallery</span>
+                </a>
+
+                <p>
+                    Visual stories worth remembering.
+                </p>
+
+            </div>
+
+            <div class="footer-right">
+
+                <p>
+                    © 2026 Image Gallery
+                </p>
+
+                <p>
+                    Built with HTML, CSS & JavaScript
+                </p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+    <div
+        class="lightbox"
+        id="lightbox"
+        aria-hidden="true"
+    >
+
+        <!-- Close -->
+
+        <button
+            class="lightbox-close"
+            id="lightboxClose"
+            type="button"
+            aria-label="Close image viewer"
+        >
+            ×
+        </button>
+
+
+
+        <!-- Previous -->
+
+        <button
+            class="lightbox-prev"
+            id="lightboxPrev"
+            type="button"
+            aria-label="Previous image"
+        >
+            ‹
+        </button>
+
+
+
+        <!-- Image Content -->
+
+        <div class="lightbox-content">
+
+            <div class="lightbox-image-container">
+
+                <img
+                    id="lightboxImage"
+                    src=""
+                    alt=""
+                >
+
+            </div>
+
+            <div class="lightbox-info">
+
+                <div>
+
+                    <p
+                        class="lightbox-category"
+                        id="lightboxCategory"
+                    >
+                    </p>
+
+                    <h3
+                        id="lightboxTitle"
+                    >
+                    </h3>
+
+                </div>
+
+                <span
+                    class="lightbox-counter"
+                    id="lightboxCounter"
+                >
+                </span>
+
+            </div>
+
+        </div>
+
+
+
+        <!-- Next -->
+
+        <button
+            class="lightbox-next"
+            id="lightboxNext"
+            type="button"
+            aria-label="Next image"
+        >
+            ›
+        </button>
+
+    </div>
+
+
+
+    <!-- JavaScript -->
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
