@@ -1,17 +1,28 @@
-<<<<<<< HEAD
-🖼️ Image Gallery
+# 🖼️ Image Gallery
 
-Image Gallery is a modern, responsive web application built using HTML5, CSS3, and JavaScript. It provides an interactive way to browse and explore images with features such as category filtering, image search, smooth hover effects, animations, and a full-screen lightbox. Users can navigate between images using Next/Previous buttons, keyboard controls, mouse-wheel navigation, and touch/swipe gestures on mobile devices. The project is designed to provide a professional and user-friendly experience across desktop, tablet, and mobile screens.
+Image Gallery is a modern, responsive web application built using HTML5, CSS3, and JavaScript. It provides an interactive way to browse and explore images with a clean, fast, and mobile-friendly interface.
 
-Live Demo : https://deepakkatwa.github.io/Image-Gallery/
+**Live Demo:** [https://deepakkatwa.github.io/Image-Gallery/](https://deepakkatwa.github.io/Image-Gallery/)
 
-🛠️ Technologies
-HTML5
-CSS3
-JavaScript
+---
 
-📂 Structure
+## ✨ Features
 
+- Responsive image grid that adapts to any screen size
+- Smooth hover and transition effects
+- Lightbox-style image preview
+- Lightweight — no frameworks, pure HTML/CSS/JS
+- Fast load times and clean, semantic markup
+
+## 🛠️ Technologies
+
+- **HTML5** — structure and semantic markup
+- **CSS3** — layout, responsiveness, and styling
+- **JavaScript** — interactivity and dynamic behavior
+
+## 📁 Structure
+
+```
 Image-Gallery/
 ├── index.html
 ├── css/
@@ -19,11 +30,25 @@ Image-Gallery/
 ├── js/
 │   └── script.js
 └── images/
-    ├── nature/
-    ├── travel/
-    ├── architecture/
-    └── people/
+    └── (image assets)
+```
 
-=======
-# Image_Gallery
->>>>>>> bd398939c68241f0a1b9b0f72cc11c05e0352ce1
+## 🚀 Getting Started
+
+1. Clone the repository
+   ```bash
+   git clone https://github.com/DeepakKatwa/Image_Gallery_CodeAlpha-Intership.git
+   ```
+2. Navigate into the project folder
+   ```bash
+   cd Image_Gallery_CodeAlpha-Intership
+   ```
+3. Open `index.html` in your browser — no build step or dependencies required.
+
+## 📌 About This Project
+
+This project was built as part of the **CodeAlpha Internship** program to demonstrate front-end fundamentals: responsive layout, DOM manipulation, and clean UI design using only HTML, CSS, and JavaScript.
+
+## 📄 License
+
+This project is open source and available for personal or educational use.
